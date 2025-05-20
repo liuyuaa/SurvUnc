@@ -1,0 +1,102 @@
+DeepHit:
+  metabric:
+    lr: 0.001
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  support:
+    lr: 0.005
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: true
+  seer_bc:
+    lr: 0.001
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  sac3:
+    lr: 0.001
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  flchain:
+    lr: 0.001
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+
+DeepSurv:
+  metabric:
+    lr: 0.01
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  support:
+    lr: 0.1
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  seer_bc:
+    lr: 0.01
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  sac3:
+    lr: 0.01
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+  flchain:
+    lr: 0.01
+    dropout: 0.1
+    batch_size: 256
+    batch_norm: false
+
+RSF:
+  metabric:
+    n_estimators: 100
+    min_samples_split: 20
+    min_samples_leaf: 5
+  support:
+    n_estimators: 100
+    min_samples_split: 20
+    min_samples_leaf: 5
+  seer_bc:
+    n_estimators: 100
+    min_samples_split: 20
+    min_samples_leaf: 5
+  sac3:
+    n_estimators: 20
+    min_samples_split: 20
+    min_samples_leaf: 5
+  flchain:
+    n_estimators: 100
+    min_samples_split: 20
+    min_samples_leaf: 5
+
+DSM:
+  metabric:
+    distribution: 'LogNormal'
+    k_dsm: 4
+    lr: 0.0005
+    layers_dsm: [32, 32]
+  support:
+    distribution: 'Weibull'
+    k_dsm: 6
+    lr: 0.005
+    layers_dsm: [32, 32]
+  seer_bc:
+    distribution: 'Weibull'
+    k_dsm: 6
+    lr: 0.005
+    layers_dsm: [32, 32]
+  sac3:
+    distribution: 'Weibull'
+    k_dsm: 10
+    lr: 0.005
+    layers_dsm: [32, 32, 32]
+  flchain:
+    distribution: 'Weibull'
+    k_dsm: 4
+    lr: 0.005
+    layers_dsm: [32, 32]
