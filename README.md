@@ -58,8 +58,7 @@ python 4_evaluation.py --dataset {dataset} --model {model} --meta_model {meta_mo
 
   ```latex
   @inproceddings{liu2025survunc,
-  	title 	  = {SurvUnc: A Meta-Model Based Uncertainty Quantification
-Framework for Survival Analysis},
+  	title 	  = {SurvUnc: A Meta-Model Based Uncertainty Quantification Framework for Survival Analysis},
   	author	  = {Liu, Yu and Tao, Weiyao and Xia, Tong and Knight, Simon and Zhu, Tingting},
   	booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining,},
   	year      = {2025},
